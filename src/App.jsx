@@ -1,24 +1,22 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Tab1 from "./pages/Tab1";
-import Tab2 from "./pages/Tab2";
-import Tab3 from "./pages/Tab3";
-import Tab4 from "./pages/Tab4";
-import Tab5 from "./pages/Tab5";
+import React, { useState } from "react";
+import Search from "./components/Search";
+import PatientRecords from "./components/PatientRecords";
 
-function App() {
+const title = "Patient Medical Records";
+
+const App = () => {
+
+  const [record, setRecord] = useState(null);
+
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Tab1 />} />
-        <Route path="/tab2" element={<Tab2 />} />
-        <Route path="/tab3" element={<Tab3 />} />
-        <Route path="/tab4" element={<Tab4 />} />
-        <Route path="/tab5" element={<Tab5 />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="max-w-6xl w-full mx-auto min-h-[100vh] flex flex-col gap-5 justify-start items-center bg-color-1 p-5">
+      <h1 className='text-36 sm:text-48 lg:text-56 2xl:text-60 font-bold text-color-4'>{title}</h1>
+      <div className="w-full flex flex-col gap-5">
+        <Search setRecord={setRecord} />
+        <PatientRecords record={record} setRecord={setRecord} />
+      </div>
+    </div>
   );
-}
+};
 
 export default App;

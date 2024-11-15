@@ -26,8 +26,8 @@ const PatientRecords = ({ record, setRecord }) => {
                             </button>
                         </div>
 
-                        <table id="patient-records-table" className="bg-color-2 p-2 w-full text-center text-14 min-[475px]:text-base">
-                            <thead id="table-header" className="text-14 min-[475px]:text-18">
+                        <table id="patient-records-table" className="p-2 w-full text-center text-14 min-[475px]:text-base">
+                            <thead id="table-header" className="bg-color-3 text-14 min-[475px]:text-18">
                                 <tr>
                                     <th>SL</th>
                                     <th>Date</th>

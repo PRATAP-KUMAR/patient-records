@@ -8,8 +8,8 @@
 
     select,
     options {
-        all: unset;
-        border: 2px solid blue;
+        outline: none;
+        border: 2px solid #064789;
         padding: 2px;
     }
 
@@ -24,12 +24,13 @@
     }
 
     button {
-        background-color: blue;
+        font-weight: bolder;
+        background-color: #064789;
         width: fit-content;
         height: fit-content;
         padding: 8px;
         border-radius: 10px;
         color: white;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
 }

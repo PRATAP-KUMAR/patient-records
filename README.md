@@ -1,6 +1,32 @@
-# React + Vite + TailwindCSS Template
+## Patient Medical Records
 
-Example:
+### Installation and Opening with localhost
 ```
-gh repo create myrepo_name --template https://github.com/PRATAP-KUMAR/pratap-panabaka-react-vite-tailwind-template --private  --clone
+git clone https://github.com/PRATAP-KUMAR/patient-records
+cd patient-records
+npm install
+npm run dev
+```
+
+### Jest unit testing
+npm run test
+
+```
+$ npm run test
+
+> pratap_panabaka_side_project@0.0.0 test
+> ./node_modules/.bin/react-scripts test --watchAll=false --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit
+
+ PASS  src/tests/App.test.js
+  ✓ Test Initial Loading of the App (31 ms)
+  ✓ Show alert on clicking show button if no patient is selected (13 ms)
+  ✓ Test getting patient details (56 ms)
+  ✓ Clicking the next button should display next patient (62 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.948 s, estimated 2 s
+Ran all test suites.
+$ 
 ```
